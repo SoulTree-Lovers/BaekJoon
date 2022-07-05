@@ -20,5 +20,3 @@ for i in range(n):
 
 for i in range(n):
     print("{:.3f}%".format(round(average_list[i], 3)))
-
-# print(str(round(average_list[i], 3)).ljust(6, "0") + "%")
