@@ -3,12 +3,13 @@ import sys
 
 num = int(sys.stdin.readline().rstrip())
 
-num_list = []
+count = [0] * 10001
 
 for i in range(num):
-    num_list.append(int(sys.stdin.readline().rstrip()))
+    n = int(sys.stdin.readline())
+    count[n] += 1
 
-num_list.sort()
-
-for i in num_list:
-    print(i)
+for i in range(10001):
+    if count[i] != 0:
+        for _ in range(count[i]):
+            print(i)
